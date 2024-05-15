@@ -1,15 +1,19 @@
-version : '3.8'
+version: '3.8'
 services:
-  gm:
-    image: glpskumar/gm:latest
+  movies:
+    image: movies:v1
     ports:
-     - "81:80"
-    deploy:
-      replicas: 2
-
-  fb:
-    image: glpskumar/fb:latest
+      - "81:80"
+  train:
+    image: train:v1
     ports:
       - "82:80"
-    deploy:
-      replicas: 2
+  dth:
+    image: dth:v1
+    ports:
+      - "83:80"
+  recharge:
+    image: recharge:v1
+    ports:
+      - "84:80"
+
