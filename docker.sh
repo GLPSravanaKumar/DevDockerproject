@@ -1,3 +1,3 @@
 docker images
-docker run -it --name cont1 amazonlinux
+docker run -t --name cont1 amazonlinux:latest
 docker commit cont1 image:v1
