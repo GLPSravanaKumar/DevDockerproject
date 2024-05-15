@@ -1,19 +1,19 @@
 version: '3.8'
 services:
   movies:
-    image: movies:v1
+    image: glpskumar/movies
     ports:
       - "81:80"
   train:
-    image: train:v1
+    image: glpskumar/train
     ports:
       - "82:80"
   dth:
-    image: dth:v1
+    image: glpskumar/dth
     ports:
       - "83:80"
   recharge:
-    image: recharge:v1
+    image: glpskumar/recharge
     ports:
       - "84:80"
 
