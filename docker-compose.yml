@@ -1,0 +1,15 @@
+version : '3.8'
+services:
+  gm:
+    image: glpskumar/gm:latest
+    ports:
+     - "81:80"
+    deploy:
+      replicas: 2
+
+  fb:
+    image: glpskumar/fb:latest
+    ports:
+      - "82:80"
+    deploy:
+      replicas: 2
